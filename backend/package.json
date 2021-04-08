@@ -1,0 +1,36 @@
+{
+  "name": "push-notifications-backend",
+  "version": "1.0.0",
+  "description": "Simple nodejs backend push notification.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon -r esm index.js",
+    "notifications:chrome": "node -r esm ./notifications/chome.js",
+    "notifications:firefox": "node -r esm ./notifications/firefox.js",
+    "notifications": "npm run notifications:chrome && npm run notifications:firefox"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/dimitardanailov/push-notifications.git"
+  },
+  "keywords": [
+    "push",
+    "notifications",
+    "push-notifications"
+  ],
+  "author": "Dimitar Danailov <dimityr.danailov@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dimitardanailov/push-notifications/issues"
+  },
+  "homepage": "https://github.com/dimitardanailov/push-notifications#readme",
+  "dependencies": {
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "web-push": "^3.3.5"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^1.19.1"
+  }
+}

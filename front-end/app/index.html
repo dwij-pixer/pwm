@@ -1,0 +1,42 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<title>Dimitar Danailov - Push notifications lab</title>
+		<meta name="description" content="Push notifications">
+		<meta name="author" content="Dimitar Danailov">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Include manifest -->
+		<link rel="manifest" href="manifest.json">
+
+	</head>
+	<body>
+		<h1>
+			Push notifications demo website.
+		</h1>
+		<p>This page must be accessed using HTTPS or via localhost.</p>
+		
+		<div>
+			<button id="permissions">Application wants to send you a push notifications</button>
+		</div>
+		<div>
+			<button id="exampleNotification">Example notification</button>
+		</div>
+
+		<h3>Safari push notifications:</h3>
+		<button id="safari-push-notifications">Enable safari push notifications:</button>
+
+		<h3>Native Push messaging:</h3>
+		<button id="js-push-btn">Enable push notifications:</button>
+		<section id="endpoint">
+			<h4>Subscription Object:</h4>
+			<code id="js-subscription-json"></code>
+			<h4>Endpoint URL:</h4>
+			<code id="js-endpoint-url"></code>
+		</section>
+	</body>
+</html>

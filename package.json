@@ -1,0 +1,16 @@
+{
+  "name": "push-notifications-master",
+  "version": "1.0.0",
+  "description": "Application could send push notification application on Google Chrome and Safari.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "web-push": "^3.4.4"
+  }
+}
